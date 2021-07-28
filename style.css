@@ -1,0 +1,57 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    background: #34e89e;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #0f3443, #34e89e);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #0f3443, #34e89e); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.todoHeading{
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 70px;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 5px;
+    text-transform: capitalize;
+}
+
+.main{
+    padding: 20px;
+}
+
+
+
+#input{
+    width: 40%;
+    height: 50px;
+    margin-left: 30%;
+    font-size: 25px;
+    padding: 5px;
+}
+
+
+#add-btn{
+    width: 5%;
+    height: 50px;
+    font-size: 200%;
+}
+
+#Lines ul{
+    margin-left: 33%;
+    padding: 10px;
+}
+
+#lines ul li{
+    font-size: 20px;
+}
+
+
+
+#allClear{
+    margin-left: 33%;
+    padding: 10px;
+    font-size: 20px;
+}
