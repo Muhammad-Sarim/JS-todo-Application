@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do Application</title>
+    <!-- Font Awsome Link -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
     <!-- CSS Link -->
     <link rel="stylesheet" href="style.css">
 </head>
@@ -12,38 +14,36 @@
     
 <!-- To Do Application Start -->
 
-<div>
-    <h1 class="todoHeading">ToDo Application</h1>
+<!-- <div>
+    <h1>ToDo Application</h1>
+</div> -->
+
+
+<div class="back_img">
+    <img src="https://images.pexels.com/photos/3299/postit-scrabble-to-do.jpg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="" width="100%">
 </div>
+
 
 <div class="main">
     <div class="inpTODO">
-    <input type="text" name="ToDo input" id="input">
-    <button onclick="addLine()" id="add-btn">+</button>
+    <input type="text" name="ToDo input" id="input" placeholder="Write New Item...">
+    <button onclick="addLine()" id="add-btn"><i class="fas fa-plus-square fa-2x"></i></button>
     </div>
 
     <div id="Lines">
-        
+        <ul>
+
+
+
+        </ul>
     </div>
 
     <div class="allClear">
-        <button onclick="allClear()" id="allClear">Clear All</button>
+        <button onclick="allClear()" id="allClear"><i class="far fa-trash-alt fa-2x"></i></button>
     </div>
 </div>
 
 <!-- To Do Application End -->
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- JavaScript Link -->
     <script src="app.js"></script>

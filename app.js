@@ -6,15 +6,15 @@ function addLine(){
     var input = document.getElementById("input")
     console.log(input.value);
 
-    var ul = document.createElement("ul")
-
     var li = document.createElement("li")
-    ul.appendChild(li)
+
+    // var li = document.createElement("li")
+    // ul.appendChild(li)
 
     var liText = document.createTextNode(input.value)
     li.appendChild(liText)
     // console.log(liText);
-    lines.appendChild(ul)
+    lines.appendChild(li)
     // console.log(ul);
 
     var del_btn = document.createElement("button")
@@ -22,6 +22,11 @@ function addLine(){
     var del_btnText = document.createTextNode("Delete")
     del_btn.appendChild(del_btnText)
     del_btn.setAttribute("onclick", "del_Item(this)")
+    del_btn.setAttribute("class" , "del_Btn")
+    del_btn.innerHTML = '<i class="fas fa-minus-circle fa-2x"></i>'
+
+
+
 
     li.appendChild(del_btn)
 
@@ -30,6 +35,7 @@ function addLine(){
     editBtn.appendChild(editBtnText)
     li.appendChild(editBtn)
     editBtn.setAttribute("onclick", "edit_Item(this)")
+    editBtn.innerHTML = '<i class="fas fa-edit fa-2x"></i>'
     console.log(editBtn);
 
 
@@ -42,17 +48,13 @@ function allClear(){
 }
 
 
-function del_Item(){
-    var del_btn = document.createElement("button")
-    console.log(del_btn.parentNode)
-    del_btn.parentNodes.remove()
+function del_Item(d){
+    d.parentNode.remove()
 }
 
 
 
-function edit_Item(e){
-    var edit_Value = prompt("Enter Value", e.parentNode.firsChild.Value)
-    e.parentNode.firstChild.nodeValue = edit_Value
+function edit_Item(d){
+    var edit_Value = prompt("Enter Value", d.parentNode.firsChild).nodeValue
+    d.parentNode.firstChild.nodeValue = edit_Value
 }
-
-
